@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
+    "lint": "eslint . --ext js,ts --cache --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -37,13 +38,6 @@
     "serverless-offline": "^8.3.1",
     "serverless-plugin-typescript": "^2.1.0",
     "typescript": "^4.5.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint -s && npm run check",
-      "pre-push": "npm test --NODE_ENV=test",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "bugs": {
     "url": "https://github.com/ajiteshdeb/urbidder-serverless/issues"

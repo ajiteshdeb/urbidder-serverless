@@ -2,7 +2,7 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./src/tsconfig.json"
+    "project": "tsconfig.json"
   },
   "extends": [
     "plugin:you-dont-need-lodash-underscore/compatible",
@@ -14,7 +14,6 @@
     "plugin:jest/style",
     "plugin:security/recommended",
     "plugin:prettier/recommended",
-    "prettier/@typescript-eslint",
     "prettier"
   ],
   "plugins": [

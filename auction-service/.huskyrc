@@ -1,0 +1,9 @@
+{
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint -s && npm run check",
+      "pre-push": "npm test --NODE_ENV=test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
