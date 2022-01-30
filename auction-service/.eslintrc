@@ -2,7 +2,7 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "tsconfig.json"
+    "project": "./tsconfig.json"
   },
   "extends": [
     "plugin:you-dont-need-lodash-underscore/compatible",
@@ -29,7 +29,7 @@
       {
         "singleQuote": true,
         "semi": true,
-        "printWidth": 120
+        "printWidth": 100
       }
     ],
     "@typescript-eslint/explicit-function-return-type": [
@@ -106,6 +106,9 @@
   },
   "ignorePatterns": [
     "./package.json",
-    "./package-lock.json"
+    "./package-lock.json",
+    "build",
+    "dist",
+    "public"
   ]
 }
